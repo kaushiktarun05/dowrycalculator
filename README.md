@@ -1,7 +1,6 @@
 # Dowry Calculator
 
-![Dowry Calculator Screenshot](screenshot.png)
-
+(Note: This is for fun and dowry is illegal!)
 This is a simple web application for calculating dowry amount based on various factors such as age, monthly salary, education level, caste, property ownership, vehicle ownership, and alumni status.
 
 ## Features
@@ -41,4 +40,4 @@ This is a simple web application for calculating dowry amount based on various f
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dowry-calculator.git
+   git clone https://github.com/kaushiktarun05/dowrycalculator.git
