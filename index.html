@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowry Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h1 class="text-center">Dowry Calculator</h1>
+            </div>
+            <div class="card-body">
+                <form id="dowryForm">
+                    <div class="form-group">
+                        <label for="groomName">Groom's Name:</label>
+                        <input type="text" class="form-control" id="groomName" placeholder="Enter groom's name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="brideName">Bride's Name:</label>
+                        <input type="text" class="form-control" id="brideName" placeholder="Enter bride's name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="age">Age:</label>
+                            <input type="number" class="form-control" id="age" placeholder="Enter age" required>
+                        </div>
+
+                        <div class="form-group col-md-8">
+                            <label for="monthlySalary">Monthly Salary (INR):</label>
+                            <input type="number" class="form-control" id="monthlySalary" placeholder="Enter monthly salary" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Education:</label>
+                        <select class="form-control" id="education" required>
+                            <option value="">Select education level</option>
+                            <option value="school">School</option>
+                            <option value="college">College</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="postGraduate">Post Graduate</option>
+                            <option value="doctorate">Doctorate</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caste">Caste:</label>
+                        <select class="form-control" id="caste" required>
+                            <option value="">Select caste</option>
+                            <option value="general">General</option>
+                            <option value="obc">OBC</option>
+                            <option value="sc">SC</option>
+                            <option value="st">ST</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ownsHouse">Owns a House:</label>
+                        <select class="form-control" id="ownsHouse">
+                            <option value="none">Select house type</option>
+                            <option value="flat">Flat</option>
+                            <option value="bungalow">Bungalow</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ownsCar">Owns a Car:</label>
+                        <select class="form-control" id="ownsCar">
+                            <option value="none">Select car type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="supercar">Supercar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alumni">Alumni Status:</label>
+                        <select class="form-control" id="alumni">
+                            <option value="none">Select alumni status</option>
+                            <option value="iitIimNfsu">IIT/IIM/NFSU</option>
+                            <option value="centralGovt">Other central Govt College</option>
+                            <option value="stateGovt">State Govt College</option>
+                            <option value="privateCollege">Private College</option>
+                            <option value="amity">Amity College (Baap Vidhayak Quota)</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-block" onclick="calculateDowry()">Calculate Dowry</button>
+                </form>
+
+                <div id="result" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

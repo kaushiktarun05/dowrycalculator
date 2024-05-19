@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f0f0; /* Light gray background color */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the calculator area */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.card-header {
+    background-color: #007bff; /* Bootstrap primary color for the header */
+}
+
+.card-body {
+    padding: 20px;
+}
